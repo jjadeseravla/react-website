@@ -7,6 +7,22 @@ $lightGrey: #e6e6e6;
 $darkGrey: #333;
 $red: #ff1755;
 
+/*
+Mixins
+*/
+
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  transform: translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transition:$e;
+  -moz-transition:$e;
+  transition:$e;
+}
+
 /* Fonts
 
 regular 400
@@ -24,18 +40,17 @@ body {
   font-style: normal;
 }
 
-/*
-Mixins
-*/
+a {
+  text-decoration: none;
+  @include transition(.4 ease-in-out);
+  cursor: pointer;
 
-@mixin translateY($e) {
-  -webkit-transform: translateY($e);
-    -moz-transform: translateY($e);
-        transform: translateY($e);
+  &:hover {
+    color: $red;
+    @include transition(.4 ease-in-out);
+  }
 }
 
-@mixin transition($e) {
-  -webkit-transition:$e;
-    -moz-transition:$e;
-        transition:$e;
+.container-fluid {
+  line-height: 24px;
 }
