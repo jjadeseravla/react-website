@@ -1,7 +1,17 @@
-body{
-  font-size: 10px;
+@import "_config.scss";
 
-  a {
-    color: black;
-  }
+
+header {
+  display: black;
+  width: 100%;
+  background: $black;
+  color: $white;
+
 }
+// body{
+//   font-size: 10px;
+//
+//   a {
+//     color: black;
+//   }
+// }
