@@ -22,7 +22,7 @@ Install the packages:
 $ npm Install
 ```
 
-When you're read to run the application:
+When you're ready to run the application:
 
 ```
 $ npm start
